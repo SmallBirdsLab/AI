@@ -1,3 +1,5 @@
+'''GA求函数最值'''
+
 import numpy as np
 from sko.GA import GA
 
