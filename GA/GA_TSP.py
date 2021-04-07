@@ -1,7 +1,8 @@
-import numpy as np
-from scipy import spatial
-import pandas as pd
+'''GA解TSP问题'''
+'''包含了测试'''
+'''种群数量8，遗传代数10成功率还这么高也太牛了'''
 
+import numpy as np
 from sko.GA import GA_TSP
 
 num_points = 5 # 城市数量
