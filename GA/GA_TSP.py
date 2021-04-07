@@ -24,7 +24,7 @@ def runGA():
     return ga_tsp.run()
 
 def testGA(testNum): # 测试testNum次，计算找到最短路径的成功率
-    right = 0        # 测试成功次数
+    right = 0        # 成功次数
     test_result = [] # 存放测试结果
 
     for i in range(testNum): # 得到最短路径（所有结果最小值），测试结果
@@ -37,8 +37,8 @@ def testGA(testNum): # 测试testNum次，计算找到最短路径的成功率
         elif(best_distance > distance):
             best_distance = distance
 
-    for i in range(testNum): # 得到测试成功次数
-        if(test_result[i] == best_distance):
+    for result in test_result: # 得到测试成功次数
+        if(result == best_distance):
             right += 1
 
     print("成功率：{}".format(right / testNum))
