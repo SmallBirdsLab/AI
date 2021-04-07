@@ -1,5 +1,5 @@
 '''GA迷宫寻路'''
-'''python速成太难了'''
+'''python太速成了，后序继续改善代码'''
 
 import numpy as np
 from sko.GA import GA
