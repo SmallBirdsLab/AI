@@ -50,14 +50,14 @@ def star(): # 返回移动步骤
     for tryNum in range(minTry, minTry + rNum + cNum):   # 尝试走minTry步找到出口，最多走minTry + rNum + cNum步
         best_operations, best_distance = findWay(tryNum)
         if(best_distance < 0.5):
-            print("移动步骤：" + str(best_operations))
+            print("移动步骤：" + str(best_operations))   # 可注释
             return best_operations
 
 def testGA(testNum): # 测试testNum次，计算6步找到出口的成功率
     right = 0        # 测试成功次数
     test_result = [] # 存放测试结果
 
-    for i in range(testNum): # 得到最短路径（所有结果最小值），测试结果
+    for i in range(testNum):  # 得到最短路径（所有结果最小值）和测试结果
         tryNum = len(star())
         test_result.append(tryNum)
         if(i == 0):
