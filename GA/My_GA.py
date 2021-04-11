@@ -81,7 +81,7 @@ def variation(popular_new, gene_num, pv):
 
 def run(p):      # 传入参数p进行测试
     gene_num = 5 # 染色体上基因个数
-    '''可以被p赋值修改的参数'''
+    '''在此修改被p赋值修改的参数'''
     num = 22     # 种群数量
     pc = 0.7     # 交叉概率
     pv = p       # 变异概率
